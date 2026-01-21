@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:progetto_app_economia/pages/login_page.dart';
+import 'package:progetto_app_economia/pages/splash_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const LoginPage(),
+      home: const SplashPage(),
     );
   }
 }

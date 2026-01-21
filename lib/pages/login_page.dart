@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:progetto_app_economia/pages/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -102,7 +103,11 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
                       // Logica di login
-                      print('Login con: ${_emailController.text}');
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomePage()),
+                      );
                     }
                   },
                   style: FilledButton.styleFrom(
