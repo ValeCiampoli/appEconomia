@@ -71,18 +71,19 @@ class HomePage extends StatelessWidget {
                   );
                   } else {
                     return const BuildCard(
-                    title: 'EXTRA',
+                    title: 'Extra',
                     cardcolor: Colors.yellowAccent,
                     shadowStrength: 0.5,
                   );
                   }
-                 
                 },
               ),
             ),
+        const SizedBox(height: 40),
           ],
         ),
       ),
+      
     );
   }
 }
